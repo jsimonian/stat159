@@ -2,12 +2,13 @@
 
 - [Author](#author)
 - [Project Structure](#project-structure)
+- [Contents](#contents)
 - [Usage](#usage)
 
 
-## Author: Joseph Simonian
+### Author: Joseph Simonian
 
-## Project Structure:
+### Project Structure:
 
 ```
 project
@@ -40,6 +41,16 @@ project
     │   report.pdf
 ```
 
-## Usage:
+### Contents:
 
-To generate the pdf output of this homework, simply clone the repository and run `make all`
+- `/code`: Code used in the generation of all histograms, plots, and regression data.
+
+- `/images`: Histograms and scatterplots used in the report, in both `.pdf` and `.png` formats.
+
+- `/data`: The original data (Advertising.csv), as well as summary statistics on the `TV` and `Sales` columns and regression data.
+
+- `/report`: The main report, in `.Rmd`, `.pdf`, and `.html` formats.
+
+### Usage:
+
+To generate the pdf output of this homework, simply clone the repository and run `make all`.
