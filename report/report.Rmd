@@ -2,7 +2,7 @@
 title: "Simple Regression Analysis"
 author: "Joseph Simonian"
 date: "Oct 07, 2016"
-output: pdf_document
+output: html_document
 ---
 
 ## Abstract
@@ -62,6 +62,6 @@ A scatterplot of Sales vs TV advertising budget is shown below, with the least-s
 
 With an extremely low p-value, it is clear that there is a relationship between TV Advertising budget and Sales. Based on the values of $\beta_0$ and $\beta_1$ (notated in this table as the "(Intercept)" and TV" coefficients), we can conclude with 95% confidence that, in the abscence of advertising, sales will fall somewhere between 6,130 and 7,940 units (on average). We can also conclude that for each \$1,000 increase in television advertising, there will be an average increase in sales of between 42 and 53 units.
 
-Conclusions:
+## Conclusions
 
 Based on this analysis, it is clear that TV advertisements do have a positive correlation with product sales. As TV advertising budget increases, sales tend to increase by (on average), 48 per $1000 of advertising budget. The implications of this for both advertisers and media companies will depend on circumstances, but in general, our results support the hypothesis that television advertisements are effective in increasing product sales.
