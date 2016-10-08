@@ -3,7 +3,6 @@
 - [Author](#author)
 - [Project Structure](#project-structure)
 - [Usage](#usage)
-- [License](#license)
 
 
 ## Author: Joseph Simonian
@@ -40,3 +39,7 @@ project
     │   report.Rmd
     │   report.pdf
 ```
+
+## Usage:
+
+To generate the pdf output of this homework, simply clone the repository and run `make all`
