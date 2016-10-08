@@ -15,9 +15,11 @@ setwd("../images")
 plot(advertising$TV, 
      advertising$Sales, 
      main = "Effect of TV Advertising on Sales", 
-     xlab = "TV Advertising", 
+     xlab = "TV Advertising Budget", 
      ylab = "Sales",
      pch = 20)
+
+abline(model, col="red")
 
 dev.copy(png,'scatterplot-tv-sales.png')
 dev.off()

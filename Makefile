@@ -1,5 +1,3 @@
-AdvertisingURL="http://www-bcf.usc.edu/~gareth/ISL/Advertising.csv"
-
 .PHONY: all data clean
 
 all: report/report.pdf report/report.html eda-output.txt regression.RData
@@ -21,7 +19,7 @@ data/regression.RData: code/regression-script.R data/Advertising.csv
 data/Advertising.csv: data
 
 data:
-	curl AdvertisingURL > data/Advertising.csv
+	curl "http://www-bcf.usc.edu/~gareth/ISL/Advertising.csv" > data/Advertising.csv
 
 clean:
 	rm report/report.pdf; rm report/report.html
