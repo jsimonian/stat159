@@ -1,6 +1,13 @@
-.PHONY: all data clean
+.PHONY: all data clean lab9
 
-all: report/report.pdf report/report.html eda-output.txt regression.RData
+all: report/report.pdf report/report.html eda-output.txt regression.RData lab9
+
+lab9: lab9/lab9.pdf
+
+lab9/lab9.pdf: lab9/lab9.Rnw
+	cd lab9; R CMD Sweave --pdf lab9.Rnw
+
+lab9/lab9.Rnw: data/regression.RData images/scatterplot-tv-sales.png
 
 report/report.pdf: report/report.Rmd
 	pandoc report/report.Rmd -s -o report/report.pdf

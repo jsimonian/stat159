@@ -1,4 +1,4 @@
-setwd("../data")
+setwd("data")
 advertising <- read.csv(file="Advertising.csv",head=TRUE,sep=",")
 
 TV_data = advertising$TV
@@ -12,10 +12,10 @@ save(model_summary, file = "regression.RData")
 
 setwd("../images")
 
-plot(advertising$TV, 
-     advertising$Sales, 
-     main = "Effect of TV Advertising on Sales", 
-     xlab = "TV Advertising Budget", 
+plot(advertising$TV,
+     advertising$Sales,
+     main = "Effect of TV Advertising on Sales",
+     xlab = "TV Advertising Budget",
      ylab = "Sales",
      pch = 20)
 
